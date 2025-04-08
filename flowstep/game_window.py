@@ -8,6 +8,8 @@ def active_game(sleep_duration=0.5):
     :param win_idx: 多开时游戏窗口序号
     :return:
     """
+    if len(pyautogui.getWindowsWithTitle("钢岚")) == 0:
+        raise Exception("请启动钢岚，界面停留在主界面或战术模拟2-4")
     # 先最小化再激活窗口
     pyautogui.getWindowsWithTitle("钢岚")[0].minimize()
     pyautogui.getWindowsWithTitle("钢岚")[0].maximize()

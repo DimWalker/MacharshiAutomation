@@ -22,5 +22,7 @@ logging.basicConfig(
 
 if __name__ == '__main__':
     active_game()
-    time.sleep(1)  # 等待窗口激活
+    # 等待窗口激活
+    time.sleep(1)
+    # 战斗循环20次，手动修改
     battle_simulation(20)

@@ -42,18 +42,18 @@ def battle_center_to_battle_simulation():
         # 太快可能界面未刷新而无法拖拽，需要等待
         time.sleep(2)
         drag_from_center_to_left(600, 370, -200)
+        # 等待动画停止
+        time.sleep(2)
     auto_retry("战术模拟.png")
 
     # 找打第一页
-
     for i in range(100):
         flag = auto_retry("左三角.png")
-        time.sleep(0.1)
+        time.sleep(0.05)
         if not flag:
             break
-
+    # 第二页
     auto_retry("右三角.png")
-
     auto_retry("常规-2-4-dis.png", confidence=0.9)
 
 
@@ -69,6 +69,10 @@ def battle_execute(number_of_battles):
 
 
 def battle_simulation(number_of_battles):
-    if not auto_retry("常规-2-4-dis.png", confidence=0.9, retry_times=3):
+    # 检测当前界面位置
+    if not auto_retry("常规-2-4-dis.png", confidence=0.9, retry_times=3)\
+            and not auto_retry("开始战斗.png", retry_times=30, sleep_duration=0.1):
+        # 从主界面进入战术模拟
         battle_center_to_battle_simulation()
+    # 开始战斗
     battle_execute(number_of_battles)

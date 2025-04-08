@@ -6,7 +6,6 @@ import numpy as np
 import cv2
 import pyautogui
 
-from common.func_ctypes import left_mouse_click
 
 current_file = os.path.abspath(__file__)
 target_imgs_root_path = os.path.join(os.path.dirname(os.path.dirname(current_file)), "assets", "target_imgs")
