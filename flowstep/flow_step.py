@@ -70,8 +70,8 @@ def battle_execute(number_of_battles):
 
 def battle_simulation(number_of_battles):
     # 检测当前界面位置
-    if not auto_retry("常规-2-4-dis.png", confidence=0.9, retry_times=3)\
-            and not auto_retry("开始战斗.png", retry_times=30, sleep_duration=0.1):
+    if not auto_retry("常规-2-4-dis.png", confidence=0.9, retry_times=10, sleep_duration=0.1) \
+            and not auto_retry("开始战斗.png", retry_times=10, sleep_duration=0.1):
         # 从主界面进入战术模拟
         battle_center_to_battle_simulation()
     # 开始战斗
