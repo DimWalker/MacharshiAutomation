@@ -1,8 +1,8 @@
 # MacharshiAutomation
 * B站演示视频：[https://www.bilibili.com/video/BV1SBdWY8Eyd](https://www.bilibili.com/video/BV1SBdWY8Eyd)
 * pyautogui实现钢岚机师解析等级自动化挖矿
-* 一般来说，一般来说从等级4升级到等级6，大概有几十钻，部分机师还会解锁徽记
-## ![](vx_images/230264411278554.png)
+* 一般来说从等级4升级到等级6，大概有几十钻，部分机师还会解锁徽记
+ ![](vx_images/230264411278554.png)
 ## 叠甲，过
 * 我没有做外挂的经验，不知道会不会封号，使用本程序需自行承担风险
 
