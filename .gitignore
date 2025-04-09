@@ -142,3 +142,7 @@ cython_debug/
 
 # 日志
 other/file_monitor.log
+
+# vnote文件
+vx.json
+vx_notebook/
