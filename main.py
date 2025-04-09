@@ -36,6 +36,7 @@ def stop_program():
 def thread_execute():
     # 战斗循环20次，手动修改
     battle_simulation(20)
+    stop_program()
 
 
 if __name__ == '__main__':
