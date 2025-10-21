@@ -4,3 +4,18 @@ pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 pip install pyautogui opencv-python pywin32
 
 # 鼠标不能瞬移，会被反作弊
+
+
+
+
+# 安装 pipreqs
+pip install pipreqs
+
+# 生成 requirements.txt（在当前目录）
+pipreqs .
+
+# 如果已有 requirements.txt，强制覆盖
+pipreqs . --force
+
+# 指定编码（解决中文路径/注释问题）
+pipreqs . --encoding=utf-8
